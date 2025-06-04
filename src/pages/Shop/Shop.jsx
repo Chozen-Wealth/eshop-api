@@ -5,7 +5,7 @@ import { useState } from 'react'
 export default function Shop({listeFavoris, setListeFavoris}) {
 
 
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
 
 
 
