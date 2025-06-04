@@ -63,3 +63,25 @@
 .avis > span:nth-of-type(2) {
     color: gray;
 }
+@media (max-width:950px) {
+    .detailsProduit {
+        flex-direction: column;
+        height: auto;
+    }
+    .divDetailsImage {
+        width: 100%;
+    }
+    .detailsImage {
+        max-height: 300px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .divDetailsInfos {
+        width: 100%;
+    }
+}
+@media (max-width:675px) {
+    .Details {
+        padding: 50px 20px 50px 20px;
+    }
+}
