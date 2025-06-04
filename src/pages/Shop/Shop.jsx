@@ -48,9 +48,9 @@ export default function Shop({listeFavoris, setListeFavoris}) {
             {show ? (
                 <div className='showFavoris'>
                     <button onClick={()=> setShow(false)}>Fermer</button>
-                    {listeFavoris.map(element => (
-                        <span>{element}</span>
-                    ))}
+                    {listeFavoris.length > 0 ? listeFavoris.map(element => (
+                        <span className='articleFav'>Article numéro : {element}</span>
+                    )): "Aucun article en favoris."}
             </div>
             ): ""}
             <Outlet />
