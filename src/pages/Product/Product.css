@@ -1,0 +1,84 @@
+.Product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 100px;
+    padding-top: 0px;
+}
+.divProduit {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.divProduit:hover {
+    transform: scale(105%);
+}
+.divProduitImage {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+}
+.heart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    fill: rgba(128, 128, 128, 0.3);
+    transform: scaleY(90%);
+}
+.heart.active {
+    fill: crimson;
+}
+.heart:hover {
+    fill: crimson;
+}
+.divProduitImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.divProduitInfos {
+    width: 100%;
+    height: 100px;
+    background-color: lightcyan;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divProduitInfos h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    width: 100%;
+    font-size: 18px;
+}
+.divProduitInfos h4 {
+    color: cornflowerblue;
+    font-size: 22px;
+}
+.divProduitInfos h4:nth-of-type(2) {
+    color: rgb(255, 196, 0);
+    font-size: 18px;
+    display: flex;
+    gap: 5px;
+}
+.divProduitsInfosBot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.count {
+    color: gray;
+    font-size: 14px;
+}
+.divTitreProduct {
+    padding: 100px;
+    padding-bottom: 50px;
+}

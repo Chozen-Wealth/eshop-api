@@ -1,0 +1,110 @@
+.Home {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.divImgCarousel {
+    height: 400px;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+}
+.imgCarousel {
+    width: 400px;
+    height: 100%;
+    object-fit: contain;
+    animation: slideIn 5s ease-out forwards;
+}
+.header {
+    background-image: linear-gradient(to bottom,  lightblue, lightskyblue);
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 50% 0%, 70% 100%, 0% 100%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    font-size: 46px;
+    color: white;
+}
+@keyframes slideIn {
+    0%{
+        transform: translateX(120%);
+    }
+    10%,90% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+.btnCarousel {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    color: white;
+    cursor: pointer;
+}
+.btnCarousel:hover {
+    background-color: cornflowerblue;
+}
+.btnCarousel span {
+    transform: scaleY(150%);
+}
+.prev {
+    position: absolute;
+    left: -15px;
+}
+.next {
+    position: absolute;
+    right: -15px;
+}
+.section-vedettes {
+    padding-top: 100px;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-top: 5px solid lightskyblue;
+    margin-top: -2px;
+}
+.divTitre {
+    display: flex;
+    flex-direction: column;
+}
+.titre {
+    font-size: 26px;
+    font-weight: bold;
+}
+.sousTitre {
+    font-size: 18px;
+    color: gray;
+}
+.vedettes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
